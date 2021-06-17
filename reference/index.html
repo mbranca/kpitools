@@ -71,7 +71,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">kpitools</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
       </span>
     </div>
 
@@ -84,7 +84,13 @@
   </a>
 </li>
 <li>
+  <a href="../articles/kpitools.html">Get started</a>
+</li>
+<li>
   <a href="../reference/index.html">Reference</a>
+</li>
+<li>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -128,9 +134,9 @@
       <tr>
         
         <td>
-          <p><code><a href="calc_kpi.html">calc_kpi()</a></code> </p>
+          <p><code><a href="c.kpi.html">c(<i>&lt;kpi&gt;</i>)</a></code> </p>
         </td>
-        <td><p>Calculate KPIs</p></td>
+        <td><p>Concatenate <code>kpi</code> objects</p></td>
       </tr><tr>
         
         <td>
@@ -140,21 +146,61 @@
       </tr><tr>
         
         <td>
-          <p><code><a href="kpi_cut.html">kpi_cut()</a></code> </p>
+          <p><code><a href="kpi_accumulate.html">kpi_accumulate()</a></code> </p>
         </td>
-        <td><p>Cut KPI indicators</p></td>
+        <td><p>Accumulate kpilists into KPIs per site lists
+The KPIs themselves are all well and good for e.g. a report where you walk
+through each individual KPI and present all of the info there, but they're
+not ideal if you want all of the KPIs for a given site or country or the
+overall study in a single table. <code>kpi_accumulate</code> does this conversion</p></td>
       </tr><tr>
         
         <td>
-          <p><code><a href="kpi_fn_.html">kpi_fn_n()</a></code> <code><a href="kpi_fn_.html">kpi_fn_prop()</a></code> <code><a href="kpi_fn_.html">kpi_fn_perc()</a></code> <code><a href="kpi_fn_.html">kpi_fn_median()</a></code> <code><a href="kpi_fn_.html">kpi_fn_mean()</a></code> <code><a href="kpi_fn_.html">kpi_fn_iqr()</a></code> <code><a href="kpi_fn_.html">kpi_fn_min()</a></code> <code><a href="kpi_fn_.html">kpi_fn_max()</a></code> </p>
+          <p><code><a href="kpi_fn_.html">kpi_fn_n()</a></code> <code><a href="kpi_fn_.html">kpi_fn_prop()</a></code> <code><a href="kpi_fn_.html">kpi_fn_perc()</a></code> <code><a href="kpi_fn_.html">kpi_fn_median()</a></code> <code><a href="kpi_fn_.html">kpi_fn_mean()</a></code> <code><a href="kpi_fn_.html">kpi_fn_iqr()</a></code> <code><a href="kpi_fn_.html">kpi_fn_min()</a></code> <code><a href="kpi_fn_.html">kpi_fn_max()</a></code> <code><a href="kpi_fn_.html">kpi_fn_missing()</a></code> </p>
         </td>
         <td><p>KPI summary functions</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="kpi_fns.html">kpi_fns()</a></code> </p>
+        </td>
+        <td><p>Get a list of KPI summary functions provided by <code>kpitools</code>.</p></td>
       </tr><tr>
         
         <td>
           <p><code><a href="kpi_outlier.html">kpi_outlier()</a></code> </p>
         </td>
         <td><p>Get the outliers</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="plot.kpi.html">plot(<i>&lt;kpi&gt;</i>)</a></code> </p>
+        </td>
+        <td><p>Plot KPI objects</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="print.kpi.html">print(<i>&lt;kpi&gt;</i>)</a></code> </p>
+        </td>
+        <td><p>Print method for kpi objects</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="riskcols.html">riskcols()</a></code> </p>
+        </td>
+        <td><p>Colors for KPIs cutoffs</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="risklabs.html">risklabs()</a></code> </p>
+        </td>
+        <td><p>Labels for KPIs with cutoffs</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="theme_kpitools.html">theme_kpitools()</a></code> </p>
+        </td>
+        <td><p>kpitools <code>ggplot2</code> theme</p></td>
       </tr>
     </tbody>
     </table>
@@ -170,7 +216,7 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by First Last.</p>
+  <p>Developed by Alan Haynes.</p>
 </div>
 
 <div class="pkgdown">
